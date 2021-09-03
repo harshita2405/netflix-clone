@@ -1,0 +1,34 @@
+.nav {
+  --padding-top: 16px;
+  --padding-left: 48px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+
+  background-image: linear-gradient(
+    to top,
+    transparent,
+    rgba(0, 0, 0, 0.6),
+    black
+  );
+
+  z-index: 1;
+  padding: var(--padding-top) var(--padding-left);
+  width: calc(100% - 2 * var(--padding-left));
+  transition: all 450px;
+}
+
+.nav-scroll {
+  background: black;
+}
+
+.nav-logo {
+  width: 80px;
+  object-fit: contain;
+}
+
+.nav-avatar {
+  width: 30px;
+  object-fit: contain;
+}

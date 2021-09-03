@@ -1,0 +1,44 @@
+.neflix-row {
+  width: 100%;
+  text-align: start;
+  margin: 0 48px;
+}
+
+.neflix-row h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0 16px;
+}
+
+.netflix-row-movies {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 24px 16px;
+}
+
+.netflix-row-movies::-webkit-scrollbar {
+  display: none;
+}
+
+.netflix-row-movies-img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 150px;
+  margin-right: 8px;
+  border-radius: 4px;
+  transition: transform 450ms;
+}
+
+.netflix-row-movies-img.row-large {
+  max-height: 250px;
+}
+
+.netflix-row-movies-img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.netflix-row-movies-img.row-large:hover {
+  transform: scale(1.2);
+}
